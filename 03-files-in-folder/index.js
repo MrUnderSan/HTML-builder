@@ -2,7 +2,7 @@ const fs = require("fs");
 
 fs.readdir("03-files-in-folder/secret-folder/", (err, files) => {
   if (err) throw err;
-  console.log("В папке находятся файлы:" + files);
+  console.log("В папке находятся файлы:");
 
   files.forEach((elem) => {
     fs.stat(`03-files-in-folder/secret-folder/${elem}`, (err, stats) => {
